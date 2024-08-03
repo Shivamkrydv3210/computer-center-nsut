@@ -1,8 +1,7 @@
 /* components/AddResearchArticle.module.css */
 .container {
-  /* max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px; */
+padding: auto;
+margin: auto;
 }
 
 header {
@@ -11,47 +10,50 @@ header {
   align-items: center;
   /* justify-content: space-around; */
 }
-header>nav{
+
+header > nav {
   margin-left: 15%;
 }
-.one{
+
+.one {
   display: flex;
   justify-content: space-between;
 }
-.two{
+
+.two {
   display: flex;
-  
-  
 }
+
 .logo {
-  height:70px;
+  height: 70px;
   width: 100px;
 }
 
 .cc {
- background-size: cover;
- height: 20vh;
- width: 200vh;
- opacity: 0.75;
-
+  background-size: cover;
+  height: 20vh;
+  width: 200vh;
+  opacity: 0.75;
 }
 
 header h1 {
   font-size: 26px;
 }
 
-h2{
+h2 {
   position: relative;
   top: 14vh;
   color: white;
-  font-weight:800;
+  font-weight: 800;
   z-index: 100;
-  }
-  h3{
-    font-size: xx-large;
-  }
+}
+
+h3 {
+  font-size: xx-large;
+}
+
 nav ul {
-  justify-content:left;
+  justify-content: left;
   list-style: none;
   display: flex;
   gap: 20px;
@@ -62,8 +64,10 @@ nav li {
 }
 
 main {
- justify-content: center;
+  
+  justify-content: center;
   text-align: center;
+  
 }
 
 form {
@@ -93,12 +97,12 @@ form {
   gap: 10px;
 }
 
-.clear, .submit {
+.clear,
+.submit {
   padding: 10px 20px;
   margin: 10px;
   cursor: pointer;
   border-radius: 5%;
-
 }
 
 .clear {
@@ -110,4 +114,91 @@ form {
   background-color: #007bff;
   color: white;
   border: none;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 950px) {
+  .cc {
+    width: 100vw;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  header > nav {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .one,
+  .two {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .formGroup input {
+    width: 90%;
+  }
+
+  .clear,
+  .submit {
+    width: 90%;
+    margin: 5px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cc {
+    height: 25vh;
+  }
+
+  h2 {
+    top: 10vh;
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: large;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 50px;
+    width: 70px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  .cc {
+    height: 30vh;
+  }
+
+  h2 {
+    top: 8vh;
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: medium;
+  }
+
+  nav ul {
+    gap: 5px;
+  }
+
+  nav li {
+    font-size: 14px;
+  }
 }
