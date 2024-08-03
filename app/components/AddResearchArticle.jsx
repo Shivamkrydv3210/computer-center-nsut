@@ -10,8 +10,14 @@ const AddResearchArticle = () => {
       <header className={styles.header}>
         <Image src={logo} alt="University Logo" className='logo' />
         <h1>Netaji Subhas University of Technology</h1>
-        <nav>
-          <ul>
+        <input type="checkbox" id="hamburger-checkbox" />
+       <label for="hamburger-checkbox" class="hamburger-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+       <nav>
+    <ul class="nav-links">
             <li>Home</li>
             <li>About Us</li>
             <li>Research</li>
@@ -19,8 +25,8 @@ const AddResearchArticle = () => {
             <li>People</li>
             <li>Contact Us</li>
             <li>Admin Login</li>
-          </ul>
-        </nav>
+    </ul>
+  </nav>
       </header>
       <main>
         <h2>WELCOME ADMIN!</h2>
